@@ -1,5 +1,5 @@
 Cell[][] cells;
-boolean simRunning = false, keyJustPressed = false;
+boolean simRunning = false;
 
 void setup() {
   frameRate(60);
@@ -33,7 +33,6 @@ void draw() {
     if (keyPressed) {
       if (key == ENTER) {
         simRunning = true;
-        keyJustPressed = true;
       }
     }
     else {
@@ -59,7 +58,6 @@ void draw() {
     if (keyPressed) {
       if (key == BACKSPACE) {
         simRunning = false;
-        keyJustPressed = true;
       }
     }
     drawSquares();
